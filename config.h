@@ -1,14 +1,13 @@
 #define CMDLENGTH 50
-#define delimiter " "
+#define delimiter "|"
 
 static const Block blocks[] = {
-	{"sb-mail", 1800, 1},
-	{"sb-music", 0, 2},
-	{"sb-disk", 1800, 4},
-	{"sb-memory", 10, 3},
-	{"sb-loadavg", 10, 9},
-	{"sb-volume", 0, 5},
-	{"sb-battery", 5, 6},
-	{"sb-date", 60, 7},
-	{"sb-network", 5, 8},
+    /*Command*/        /*Update Interval*/    /*Update Signal*/
+    { "music",         0,    11 },
+    { "moonphase", 18000,     4 },
+    { "weather",   18000,     5 },
+    { "volume",        0,    10 },
+    { "nettraf",      10,    16 },
+    { "clock",        10,     6 },
+    { "killwin",       0,    15 },
 };
